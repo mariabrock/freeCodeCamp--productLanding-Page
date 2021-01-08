@@ -2,6 +2,56 @@ body {
   font-family: 'Xanh Mono', monospace;
 }
 
+#header-img {
+  height: 50 px;
+  width: 50px
+}
+
+header {
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  flex-direction: row;
+  width: 60vw;
+}
+
+#logo-text {
+  margin-left: 0.25em;
+}
+
+ul {
+  width: 35vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+li {
+  list-style: none;
+}
+
+.links {
+  display: flex;
+  flex-direction: row;
+}
+
+
+/* #nav-bar {
+  display: flex;
+  justify-content: right;
+} */
+
+/* .container {
+  display: block;
+  justify-content: space-evenly;
+} */
+
 /* User Story #14: My product landing page should have at least one media query. */
 
 /* User Story #15: My product landing page should utilize CSS flexbox at least once. */
