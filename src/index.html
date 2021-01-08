@@ -11,17 +11,25 @@
 <!-- User Story #1: My product landing page should have a header element with a corresponding id="header". -->
         <header id="header">
           <!-- User Story #2: I can see an image within the header element with a corresponding id="header-img". A company logo would make a good image here. -->
-          <div class ="logo">
-            <img id="header-img" src="" />
+          
+          <!-- User Story #3: Within the #header element I can see a nav element with a corresponding id="nav-bar". -->
+          <div class="logo">
+            <img id="header-img" src="https://www.flaticon.com/svg/static/icons/svg/1437/1437306.svg" />
+            <h1 id="logo-text">The Poly-fil Alliance</h1>
           </div>
-            
-           <!-- User Story #3: Within the #header element I can see a nav element with a corresponding id="nav-bar". -->
-           <nav id="nav-bar">
+          
+          <nav id="nav-bar">
              <!-- User Story #4: I can see at least three clickable elements inside the nav element, each with the class nav-link. -->
              <ul>
-              <li class="nav-link">link 1</li>
-              <li class="nav-link">link 2</li>
-              <li class="nav-link">link 3</li>
+              <li>
+                <a class="nav-link" href=#featured>Featured</a>
+              </li>
+              <li>
+                <a class="nav-link" href=#offers>What We Offer</a>
+              </li>
+              <li>
+                <a class="nav-link" href=#pricing>Pricing</a>
+              </li>
              </ul>
              <!-- User Story #5: When I click a .nav-link button in the nav element, I am taken to the corresponding section of the landing page. -->
 
@@ -32,8 +40,16 @@
         <div class="container">
           <section id="contact">
             <!-- User Story #7: My landing page has a form element with a corresponding id="form". -->
-            
-            <!-- User Story #8: Within the form, there is an input field with id="email" where I can enter an email address. -->
+
+            <form id="form">
+              <div id="form-group">
+                <!-- User Story #8: Within the form, there is an input field with id="email" where I can enter an email address. -->
+                <input type="email" class="form-control" na me="email" id="email" placeholder="yournamehere@email.com" required/>
+              </div>
+              <div id="form-group">
+                <button type="submit" class="submit-button" id="submit" action="https://www.freecodecamp.com/email-submit">Submit</button>
+              </div>
+            </form>
             
             <!-- User Story #9: The #email input field should have placeholder text to let the user know what the field is for. -->
             
