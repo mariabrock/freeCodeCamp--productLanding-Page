@@ -1,10 +1,10 @@
 body {
-  font-family: 'Xanh Mono', monospace;
+  font-family: "Xanh Mono", monospace;
 }
 
 #header-img {
-  height: 50 px;
-  width: 50px
+  height: 20%;
+  width: 20%;
 }
 
 header {
@@ -43,7 +43,7 @@ li {
 
 .container {
   display: relative;
-  margin-top: 6em; 
+  margin-top: 6em;
 }
 
 #contact {
@@ -55,7 +55,7 @@ li {
   height: 200px;
 }
 
-#email{
+#email {
   min-width: 400px;
   width: 100%;
   height: 40px;
@@ -77,6 +77,17 @@ li {
   font: inherit;
   letter-spacing: 0.5;
   border-radius: 8px;
+}
+
+#featured {
+  display: flex;
+  flex-direction: column;
+}
+
+.fas {
+  color: indianred;
+  height: 50px;
+  width: 50px;
 }
 
 /* User Story #14: My product landing page should have at least one media query. */
