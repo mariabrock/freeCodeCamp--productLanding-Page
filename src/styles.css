@@ -1,28 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
-  font-family: "Xanh Mono", monospace;
+  font-family: "Gugi", cursive;
+  margin: 0;
+  padding: 0;
 }
 
 #header-img {
-  height: 20%;
-  width: 20%;
+  height: 10%;
+  width: 10%;
 }
 
 header {
-  position: fixed;
+  position: absolute;
   top: 0;
+  min-height: 75px;
+  padding: 0px 20px;
   display: flex;
   justify-content: space-around;
   align-items: center;
+  background-color: #c28147;
 }
 
 .logo {
   display: flex;
   flex-direction: row;
+  justify-content: left;
+  align-items: center;
   width: 60vw;
 }
 
 #logo-text {
-  margin-left: 0.25em;
+  margin-left: 0.5em;
+  color: #fcffff;
+}
+
+.nav-link {
+  color: #fcffff;
+}
+
+@media (max-width: 600px) {
+  header {
+    flex-wrap: wrap;
+  }
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+#contact-form {
+  margin-top: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 200px;
+}
+
+#featured {
+  margin-top: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#offers {
+  margin-top: 10%;
+  display: flex;
+  justify-content: center;
+  margin-left: 3em;
+}
+
+#pricing {
+  margin: 10%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  justify-content: space-around;
+}
+
+.product {
+  margin-top: 10%;
+  border: black solid 2px;
+  background-color: #fcffff;
+  padding: 0.5em;
+}
+
+.product-btn {
+  max-width: 150px;
+  width: 100%;
+  height: 40px;
+  margin: 15px 0;
+  padding: 5px 0;
+  background-color: #d6be78;
+  font: inherit;
+  color: #fcffff;
+  letter-spacing: 0.5;
+  border-radius: 8px;
 }
 
 ul {
@@ -36,23 +116,13 @@ li {
   list-style: none;
 }
 
+ol {
+  padding: 1em;
+}
+
 .links {
   display: flex;
   flex-direction: row;
-}
-
-.container {
-  display: relative;
-  margin-top: 6em;
-}
-
-#contact {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  height: 200px;
 }
 
 #email {
@@ -73,21 +143,69 @@ li {
   height: 40px;
   margin: 15px 0;
   padding: 5px 0;
-  background-color: indianred;
+  background-color: #13affe;
   font: inherit;
+  color: #fcffff;
   letter-spacing: 0.5;
   border-radius: 8px;
 }
 
-#featured {
-  display: flex;
-  flex-direction: column;
-}
-
 .fas {
-  color: indianred;
   height: 50px;
   width: 50px;
+}
+
+.grid {
+  display: flex;
+  align-content: center;
+  margin: 1em;
+}
+
+h3 {
+  margin-left: 2em;
+}
+
+.level {
+  background-color: #442f12;
+  color: #fcffff;
+}
+
+p {
+  margin-left: 1em;
+}
+
+.fa-cloud {
+  color: #d6be78;
+}
+
+.fa-mitten {
+  color: #ad63a0;
+}
+
+.fa-frog {
+  color: #2f3e9d;
+}
+
+.fa-shipping-fast {
+  color: #442f12;
+}
+
+.level {
+  padding: 1em;
+}
+
+footer {
+  background-color: #c28147;
+}
+
+.foot-links {
+  padding: 1em;
+}
+
+.copyright {
+  padding: 1em;
+  display: flex;
+  justify-content: center;
 }
 
 /* User Story #14: My product landing page should have at least one media query. */

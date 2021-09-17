@@ -1,34 +1,35 @@
 <DOCTYPE html lang="eng">
   <html>
     <head>
-      <link rel="preconnect" href="https://fonts.gstatic.com">
-      <link href="https://fonts.googleapis.com/css2?family=Xanh+Mono:ital@0;1&display=swap" rel="stylesheet">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Gugi&display=swap" rel="stylesheet">
       <link rel="stylesheet" href="./styles.css">
       <title>FreeCodeCamp Responsive Web Project: Product Landing Page</title>
     </head>
       <body>
-        
+        <div id="page-wrapper">
+
 <!-- User Story #1: My product landing page should have a header element with a corresponding id="header". -->
         <header id="header">
+
           <!-- User Story #2: I can see an image within the header element with a corresponding id="header-img". A company logo would make a good image here. -->
-          
           <div class="logo">
-            <img id="header-img" src="./images/crochet-icon-12.jpg" />
+            <img id="header-img" src="./images/yarn.svg" />
             <h1 id="logo-text">The Poly-fil Alliance</h1>
           </div>
-          
           <!-- User Story #3: Within the #header element I can see a nav element with a corresponding id="nav-bar". -->
           <nav id="nav-bar">
              <!-- User Story #4: I can see at least three clickable elements inside the nav element, each with the class nav-link. -->
              <ul>
               <li>
-                <a class="nav-link" href=#featured>Featured</a>
+                <a class="nav-link" href=#featured><h3>Featured</h3></a>
               </li>
               <li>
-                <a class="nav-link" href=#offers>What We Offer</a>
+                <a class="nav-link" href=#offers><h3>What We Offer</h3></a>
               </li>
               <li>
-                <a class="nav-link" href=#pricing>Pricing</a>
+                <a class="nav-link" href=#pricing><h3>Pricing</h3></a>
               </li>
              </ul>
              <!-- User Story #5: When I click a .nav-link button in the nav element, I am taken to the corresponding section of the landing page. -->
@@ -38,10 +39,10 @@
         </header>
 
         <div class="container">
-          <section id="contact">
+          <section id="contact-form">
+
             <!-- User Story #7: My landing page has a form element with a corresponding id="form". -->
             <h1>Join the Fight!</h1>
-
             <form id="form" action="https://www.freecodecamp.com/email-submit">
               <div id="form-group">
                 <!-- User Story #8: Within the form, there is an input field with id="email" where I can enter an email address. -->
@@ -55,64 +56,136 @@
               </div>
             </form>
             <!-- User Story #12: When I click the #submit element, the email is submitted to a static page (use this mock URL: https://www.freecodecamp.com/email-submit). -->
-
-            
           </section>
+        </div>  
+
+        <div class="container"> 
           <section id="featured">
-            <i class="fas fa-cloud">quality materials</i> 
-            <i class="fas fa-mitten">show us your wips</i> 
-            <i class="fas fa-frog">show us your "frogs"</i> 
-            <i class="fas fa-shipping-fast">fast shipping: land, sea, or air</i> 
-          </section>
+            <div class="grid">
+            <i class="fas fa-cloud fa-3x"></i>
+              <h3>Quality Materials</h3>
+                <p>Sourced as locally as we can find them.</p>
+            </div>
+            <div class="grid">
+              <i class="fas fa-mitten fa-3x"></i> 
+                <h3>Show us your Work!</h3>
+                <p>Show us your best projects!</p>
+            </div>
 
-          <section id="how-it-works">
+            <div class="grid">
+              <i class="fas fa-frog fa-3x"></i> 
+                <h3>Show us your "frogs"</h3>
+                <p>Share what worked and what didn't.</p>
+            </div>
+
+            <div class="grid">
+              <i class="fas fa-shipping-fast fa-3x"></i>
+                <h3>Get Orders ASAP!</h3>
+                <p>Fast, free shipping on orders over $50!</p>
+            </div> 
+
+          </section>
+        </div> 
+
+        <div class="container">
+          <section id="offers">
             <iframe
               id="video"
-              height="315"
+              height="415"
+              width="815"
               src="https://www.youtube-nocookie.com/embed/y8Yv4pnO7qc?rel=0&amp;controls=0&amp;showinfo=0"
               frameborder="0"
               allowfullscreen
             ></iframe>
           </section>
+        </div>
 
+        <div class="container">
           <section id="pricing">
-          <div class="product" id="polyfill">
-            <div class="level">Polyfill</div>
-            <h2>$5.00</h2>
+          <div class="product" id="polyfil">
+            <h4 class="level">Polyfil</h4>
+            <h4>500 Credits</h4>
             <ol>
               <li>100% Polyester fiberfill.</li>
-              <li>Bulk Options.</li>
+              <li>Bulk Options available.</li>
               <li>Lorem ipsum dolor.</li>
               <li>Lorem ipsum.</li>
             </ol>
-            <button class="btn">Select</button>
+            <button class="btn product-btn">Select</button>
           </div>
+
           <div class="product" id="yarn">
-            <div class="level">Ombre Yarn Kit</div>
-            <h2>$90</h2>
+            <h4 class="level">Ombre Yarn Kit</h4>
+            <h4>90,000 Credits</h4>
             <ol>
               <li>Quality Alpaca Wool.</li>
               <li>Green ombre shades.</li>
               <li>Lorem ipsum dolor.</li>
               <li>Lorem ipsum.</li>
             </ol>
-            <button class="btn">Select</button>
+            <button class="btn product-btn">Select</button>
           </div>
-          <div class="product" id="hooks">
-            <div class="level">Clover Hook Set</div>
-            <h2>$150</h2>
+
+          <div class="product" id="clover">
+            <h4 class="level">Clover Hook Set</h4>
+            <h4>150,000 Credits</h4>
             <ol>
               <li>Quality cotton & bamboo blend.</li>
               <li>Hook sizes 2.75mm to 15mm.</li>
               <li>Lorem ipsum dolor.</li>
               <li>Lorem ipsum.</li>
             </ol>
-            <button class="btn">Select</button>
+            <button class="btn product-btn">Select</button>
+          </div>
+
+          <div class="product" id="alpaca">
+            <h4 class="level">Alpaca Yarn Kit</h4>
+            <h4>200,000 Credits</h4>
+            <ol>
+              <li>Quality Alpaca Wool.</li>
+              <li>Natural shades.</li>
+              <li>Lorem ipsum dolor.</li>
+              <li>Lorem ipsum.</li>
+            </ol>
+            <button class="btn product-btn">Select</button>
+          </div>
+
+          <div class="product" id="tunisian">
+            <h4 class="level">Tunisian Hook Set</h4>
+            <h4>300,000 Credits</h4>
+            <ol>
+              <li>Quality Bamboo hooks.</li>
+              <li>Hook sizes 2.75mm to 15mm.</li>
+              <li>Lorem ipsum dolor.</li>
+              <li>Lorem ipsum.</li>
+            </ol>
+            <button class="btn product-btn">Select</button>
+          </div>
+
+          <div class="product" id="planet">
+            <h4 class="level">Planetary Polyfil</h4>
+            <h4>500,000,000 Credits</h4>
+            <ol>
+              <li>100% Polyester fiberfill.</li>
+              <li>So much poly-fil you could fit it in a planet.</li>
+              <li>Lorem ipsum dolor.</li>
+              <li>Lorem ipsum.</li>
+            </ol>
+            <button class="btn product-btn">Select</button>
           </div>
         </section>
+      </div>
 
-        </div>
+      <footer>
+        <ul class="foot-links">
+          <li><a id="privacy" href="#">Privacy</a></li>
+          <li><a id="terms" href="#">Terms</a></li>
+          <li><a id="contact" href="#">Contact</a></li>
+        </ul>
+        <span class="copyright"><i class="far fa-copyright"></i>Copyright 2021, The Poly-fil Alliance</span>
+      </footer>
 
+    </div>
 
         <script src="https://kit.fontawesome.com/dab618c464.js" crossorigin="anonymous"></script>
       </body>
